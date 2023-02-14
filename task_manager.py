@@ -5,6 +5,9 @@
 # ************** L1T19 - TASK - PART1 & PART2 ASSIGNMENT **************   
 # Create a program for a small business that can help it to manage tasks assigned to each member of the team. 
 # This program will work with two text files, user.txt and tasks.txt. 
+#-----------------------------------------------------------------
+# On 14/02/2023 filename user.txt was changed to app-users.txt
+#-----------------------------------------------------------------
 #
 # <tasks.txt> stores a list of all the tasks that the team is working on.
 # This text file already contains data about two tasks. 
@@ -17,7 +20,7 @@
 #   ■ The due date for the task.
 #   ■ Either a ‘Yes’ or ‘No’ value that specifies if the task has been completed yet.
 # 
-# <user.txt> stores the username and password for each user that has permission to use the program (task_manager.py). 
+# <app-users.txt> stores the username and password for each user that has permission to use the program (task_manager.py). 
 # This text file already contains one default user that has the username, ‘admin’ and the password, ‘adm1n’. 
 # The username and password for each user must be written to this file in the following format:
 #   ■ The username followed by a comma, a space and then the password.
@@ -25,8 +28,8 @@
 # The program should allow your users to do the following:
 #   ○ Login. 
 #           The user should be prompted to enter a username and password. 
-#           Valid usernames and passwords are stored in a text file called user.txt. 
-#           Display an appropriate error message if the user enters a username that is not listed in user.txt 
+#           Valid usernames and passwords are stored in a text file called app-users.txt. 
+#           Display an appropriate error message if the user enters a username that is not listed in app-users.txt 
 #           or enters a valid username but not a valid password. 
 #           The user should repeatedly be asked to enter a valid username and password until they provide
 #           appropriate credentials.
@@ -40,7 +43,7 @@
 #   ○ If the user chooses ‘r’ to register a user, the user should be prompted for the new username and password. 
 #           The user should also be asked to confirm the password. 
 #           If the value entered to confirm the password matches the value of the password, the username
-#           and password should be written to user.txt in the appropriate format.
+#           and password should be written to app-users.txt in the appropriate format.
 #   ○ If the user chooses ‘a’ to add a task, the user should be prompted to enter the username of the person 
 #           the task is assigned to, the title of the task, a description of the task and the due date of the 
 #           task. The data about the new task should be written to tasks.txt. The date on which the task is 
@@ -66,13 +69,13 @@ from datetime import datetime
 
 #=========== Login Section ===========
 '''Here you will write code that will allow a user to login.
-    - Your code must read usernames and password from the user.txt file
+    - Your code must read usernames and password from the app-users.txt file
     - You can use a list or dictionary to store a list of usernames and passwords from the file.
     - Use a while loop to validate your user name and password.
 '''
 
 # Open file with users details.
-f_users = open ("./user.txt", "r")
+f_users = open ("./app-users.txt", "r")
 
 # String variable to compensate for possible bug. Reading next line (\n) into data.
 # If you add new user to file with funtion according to instruction, 
@@ -177,7 +180,7 @@ e \t- \tExit \n
         print ()
         print ("You chose option -r-")
 
-        # Write code to add a new user to the user.txt file
+        # Write code to add a new user to the app-users.txt file
         
         # Request input of a new username.
         print ()
@@ -211,10 +214,10 @@ e \t- \tExit \n
             cnfrm_pw_str = input ("Confirm password : ")
 
             # Check if the new and confirmed passwords are the same.
-            # If they are the same, add them to the user.txt file, else present a relevant message.
+            # If they are the same, add them to the app-users.txt file, else present a relevant message.
             if new_usr_pw == cnfrm_pw_str :
                 # Open the file users.txt for append mode else we will loose our user details.
-                f_users = open ("./user.txt", "a+")
+                f_users = open ("./app-users.txt", "a+")
                 f_users.write ("\n")
                 f_users.write (new_usr_name + ", " + new_usr_pw)
                 f_users.close ()
@@ -382,9 +385,9 @@ e \t- \tExit \n
 
         f_tasks.close ()
                 
-        # Open the file user.txt for read mode and count the lines.
+        # Open the file app-users.txt for read mode and count the lines.
         user_cnt_int = 0
-        f_user = open ("./user.txt", "r")
+        f_user = open ("./app-users.txt", "r")
 
         for line in f_user :
             if line.strip () :
