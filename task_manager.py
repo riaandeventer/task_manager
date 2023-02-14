@@ -1,3 +1,12 @@
+'''
+-------------------------------------   Change Log  ---------------------------------------------
+| Version   | Date          | Change
+-------------------------------------------------------------------------------------------------
+| 1.0       | 15/12/2022    | Original Version
+| 1.1       | 14/02/2023    | user.txt was changed to app-users.txt and logic adjusted to use
+
+-------------------------------------------------------------------------------------------------
+'''
 # Software Engineer: RIAAN VAN DEVENTER (SN: RV22110005417)
 # This was programmed for the Software Engineering BOOTCAMP
 # Written on 15 December 2022
@@ -5,9 +14,6 @@
 # ************** L1T19 - TASK - PART1 & PART2 ASSIGNMENT **************   
 # Create a program for a small business that can help it to manage tasks assigned to each member of the team. 
 # This program will work with two text files, user.txt and tasks.txt. 
-#-----------------------------------------------------------------
-# On 14/02/2023 filename user.txt was changed to app-users.txt
-#-----------------------------------------------------------------
 #
 # <tasks.txt> stores a list of all the tasks that the team is working on.
 # This text file already contains data about two tasks. 
@@ -18,10 +24,10 @@
 #   ■ A description of the task.
 #   ■ The date that the task was assigned to the user.
 #   ■ The due date for the task.
-#   ■ Either a ‘Yes’ or ‘No’ value that specifies if the task has been completed yet.
+#   ■ Either a 'Yes' or 'No' value that specifies if the task has been completed yet.
 # 
 # <app-users.txt> stores the username and password for each user that has permission to use the program (task_manager.py). 
-# This text file already contains one default user that has the username, ‘admin’ and the password, ‘adm1n’. 
+# This text file already contains one default user that has the username, 'admin' and the password, 'adm1n'. 
 # The username and password for each user must be written to this file in the following format:
 #   ■ The username followed by a comma, a space and then the password.
 #   ■ One username and corresponding password per line.
@@ -40,16 +46,16 @@
 #           -   va - view all tasks
 #           -   vm - view my tasks
 #           -   e - exit
-#   ○ If the user chooses ‘r’ to register a user, the user should be prompted for the new username and password. 
+#   ○ If the user chooses 'r' to register a user, the user should be prompted for the new username and password. 
 #           The user should also be asked to confirm the password. 
 #           If the value entered to confirm the password matches the value of the password, the username
 #           and password should be written to app-users.txt in the appropriate format.
-#   ○ If the user chooses ‘a’ to add a task, the user should be prompted to enter the username of the person 
+#   ○ If the user chooses 'a' to add a task, the user should be prompted to enter the username of the person 
 #           the task is assigned to, the title of the task, a description of the task and the due date of the 
 #           task. The data about the new task should be written to tasks.txt. The date on which the task is 
 #           assigned should be the current date. Also assume that whenever you add a new task, the value that 
-#           indicates whether the task has been completed or not is ‘No’.
-#   ○ If the user chooses ‘va’ to view all tasks, display the information for each task on the screen in 
+#           indicates whether the task has been completed or not is 'No'.
+#   ○ If the user chooses 'va' to view all tasks, display the information for each task on the screen in 
 #           the format below.
 #
 #           Task:               Assign initial tasks
@@ -59,7 +65,7 @@
 #           Task completed:     No
 #           Task dscription:    Use task_manager.py to assign each team member with appropriate tasks
 #             
-#   ○ If the user chooses ‘vm’ to view the tasks that are assigned to them, only display all the tasks that have 
+#   ○ If the user chooses 'vm' to view the tasks that are assigned to them, only display all the tasks that have 
 #           been assigned to the user, that is currently logged-in, on the screen in the format above.
 # *****************************************************
 
