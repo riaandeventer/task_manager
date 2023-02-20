@@ -113,7 +113,7 @@ Now we can run the program with below command:
 
 * __Menu Option ds:__ This is an option for __admin__ only. This option displays the total tasks and total users.
 
-* __Menu Option e:__ Search for books with below menu.
+* __Menu Option e:__ This opotion exits the program.
 
 ## Authors
 
