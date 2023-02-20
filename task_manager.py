@@ -1,8 +1,7 @@
-# Software Engineer: RIAAN VAN DEVENTER (SN: RV22110005417)
-# This was programmed for the Software Engineering BOOTCAMP
-# Adjusted on 18 December 2022 from project task_manager_L1T19
+# Software Engineer: RIAAN DEVENTER
+# Written on 18 December 2022
 
-# ************** L1T24 - TASK1 ASSIGNMENT **************   
+#------------------------------------------------------------------------------------------------ 
 # Create a program for a small business that can help it to manage tasks assigned to each member of the team. 
 # This program will work with two text files, user.txt and tasks.txt. 
 #
