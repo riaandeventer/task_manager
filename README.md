@@ -78,16 +78,16 @@ Now we can run the program with below command:
 
 ![Main Menu](/images/menu.jpg)
 
-* Menu Option r: Register a user, the user is prompted for the new username and password. The user is asked to confirm the password.   
+* __Menu Option r:__ Register a user, the user is prompted for the new username and password. The user is asked to confirm the password.   
       If the value entered to confirm the password matches the value of the password, the username and password is written to user.txt 
       in the appropriate format. No other users are aloud to register users.
       
-* Menu Option a: Add a task, the user is prompted to enter the username of the person the task is assigned to, 
+* __Menu Option a:__ Add a task, the user is prompted to enter the username of the person the task is assigned to, 
     the title of the task, a description of the task and the due date of the task. The data about the new task is written to tasks.txt. 
     The date on which the task is assigned is the current date. Whenever you add a new task, the value that indicates whether 
     the task has been completed or not is ‘No’.
     
-* Menu Option va: View all tasks, display the information for each task on the screen in the format below.
+* __Menu Option va:__ View all tasks, display the information for each task on the screen in the format below.
 
     Task:               Assign initial tasks
     Assigned to:        admin
@@ -96,7 +96,7 @@ Now we can run the program with below command:
     Task completed:     No
     Task dscription:    Use task_manager.py to assign each team member with appropriate tasks
     
-* Menu Option vm: View the tasks that are assigned to them, only display all the tasks that have been assigned to the user, 
+* __Menu Option vm:__ View the tasks that are assigned to them, only display all the tasks that have been assigned to the user, 
     that is currently logged-in, on the screen in the format above.
     Each task is displayed with a corresponding number which can be used to identify the task.
     -   The user can select either a specific task (by entering a number) or input ‘-1’ to return to the main menu.
@@ -106,14 +106,14 @@ Now we can run the program with below command:
     -   If the user chooses to edit a task, the username of the person to whom the task is assigned or the due date of the task can be edited. 
     -   The task can only be edited if it has not yet been completed.
     
-* Menu Option gr: This is an option for __admin__ only. This option generates a task overview and writes it to file ![task_overview.txt](/task_overview.txt) and
+* __Menu Option gr:__ This is an option for __admin__ only. This option generates a task overview and writes it to file ![task_overview.txt](/task_overview.txt) and
       it also generates a total and per user overview of their task completion and writes it to file ![user_overview.txt](/user_overview.txt).
       
-* Menu Option dr: This is an option for __admin__ only. This option displays the reports generated with Option gr.
+* __Menu Option dr:__ This is an option for __admin__ only. This option displays the reports generated with Option gr.
 
-* Menu Option ds: This is an option for __admin__ only. This option displays the total tasks and total users.
+* __Menu Option ds:__ This is an option for __admin__ only. This option displays the total tasks and total users.
 
-* Menu Option e: Search for books with below menu.
+* __Menu Option e:__ Search for books with below menu.
 
 ## Authors
 
