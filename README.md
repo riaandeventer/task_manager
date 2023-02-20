@@ -31,6 +31,8 @@ The user is prompted to enter a username and password. Valid usernames and passw
 An appropriate error message is displayed if the user enters a username that is not listed in user.txt or enters a valid username but not a valid password. 
 The user is repeatedly asked to enter a valid username and password until they provide appropriate credentials.
 
+![Main Menu](/images/login.jpg)
+
 A menu is displayed once the user has successfully logged in.
 
 ## Table of Content
@@ -60,10 +62,10 @@ If you are asked for a login then it should be because you might have made a typ
 
 ##### 1.3   Run Program
 
-If your files copied successfully, there should be a folder ebook_store when you (for windows) enter the >dir command.
+If your files copied successfully, there should be a folder task_manager when you (for windows) enter the >dir command.
 Go to this directory with below command.
 ```
->cd ebook_store
+>cd task_manager
 ```
 Now we can run the program with below command:
 ```
@@ -74,19 +76,18 @@ Now we can run the program with below command:
 * Run the program
 * You will see the menu.
 
-![Main Menu](/images/1.jpg)
+![Main Menu](/images/menu.jpg)
 
-* If the user __admin__ chooses ‘r’ to register a user, the user is prompted for the new username and password. 
-  The user is asked to confirm the password.   If the value entered to confirm the password matches the value of the password, 
-  the username and password is written to user.txt in the appropriate format.
-  No other users are aloud to register users.
-  
-* If the user chooses ‘a’ to add a task, the user is prompted to enter the username of the person the task is assigned to, 
-the title of the task, a description of the task and the due date of the task. The data about the new task is written to tasks.txt. 
-The date on which the task is assigned is the current date. Whenever you add a new task, the value that indicates whether 
-the task has been completed or not is ‘No’.
-
-* If the user chooses ‘va’ to view all tasks, display the information for each task on the screen in the format below.
+* Menu Option r: Register a user, the user is prompted for the new username and password. The user is asked to confirm the password.   
+      If the value entered to confirm the password matches the value of the password, the username and password is written to user.txt 
+      in the appropriate format. No other users are aloud to register users.
+      
+* Menu Option a: Add a task, the user is prompted to enter the username of the person the task is assigned to, 
+    the title of the task, a description of the task and the due date of the task. The data about the new task is written to tasks.txt. 
+    The date on which the task is assigned is the current date. Whenever you add a new task, the value that indicates whether 
+    the task has been completed or not is ‘No’.
+    
+* Menu Option va: View all tasks, display the information for each task on the screen in the format below.
 
     Task:               Assign initial tasks
     Assigned to:        admin
@@ -94,31 +95,21 @@ the task has been completed or not is ‘No’.
     Due date:           25 Oct 2019
     Task completed:     No
     Task dscription:    Use task_manager.py to assign each team member with appropriate tasks
-           
-* If the user chooses ‘vm’ to view the tasks that are assigned to them, only display all the tasks that have 
-#           been assigned to the user, that is currently logged-in, on the screen in the format above.
-#           Make sure that each task is displayed with a corresponding number which can be used to identify the task.
-#           -   Allow the user to select either a specific task (by entering a number) or 
-#               input ‘-1’ to return to the main menu.
-#           -   If the user selects a specific task, they should be able to choose to either :
-#                   * mark the task as complete or 
-#                   * edit the task. 
-#           -   If the user chooses to mark a task as complete, the ‘Yes’/’No’ value that
-#               describes whether the task has been completed or not should be changed to ‘Yes’. 
-#           -   If the user chooses to edit a task, the username of the person to whom the task 
-#               is assigned or the due date of the task can be edited. 
-#           -   The task can only be edited if it has not yet been completed.
-
-* Menu Option 6: Start here to load the database or reset it in the future.
-* Menu Option 1: This will straight display all the books in the inventory.
-* Menu Option 2: This will request an identification number for the book, then book title, author and quantity you have available.
-* Menu Option 3: You need the id of a book to update the title, author or quantity available. Use Menu Option 1 to get id number.
-* Menu Option 4: Remove a book from you inventory by providing the id of the book. Use Menu Option 1 to get the id number.
-* Menu Option 5: Search for books with below menu.
-
-![Main Menu](/images/2.jpg)
-
-* Menu Option 5: With submenu option 4 you can search for books with stock less than a certain number.
+    
+* Menu Option vm: View the tasks that are assigned to them, only display all the tasks that have been assigned to the user, 
+    that is currently logged-in, on the screen in the format above.
+    Each task is displayed with a corresponding number which can be used to identify the task.
+    -   The user can select either a specific task (by entering a number) or input ‘-1’ to return to the main menu.
+    -   If the user selects a specific task, they can choose to either mark the task as complete or edit the task. 
+    -   If the user chooses to mark a task as complete, the ‘Yes’/’No’ value that
+        describes whether the task has been completed or not should be changed to ‘Yes’. 
+    -   If the user chooses to edit a task, the username of the person to whom the task is assigned or the due date of the task can be edited. 
+    -   The task can only be edited if it has not yet been completed.
+    
+* Menu Option gr: This is an option for __admin__ only. 
+* Menu Option dr: This is an option for __admin__ only. This option displays the reports generated with Option gr.
+* Menu Option ds: This is an option for __admin__ only. This option displays the total tasks and total users.
+* Menu Option e: Search for books with below menu.
 
 ## Authors
 
