@@ -106,9 +106,13 @@ Now we can run the program with below command:
     -   If the user chooses to edit a task, the username of the person to whom the task is assigned or the due date of the task can be edited. 
     -   The task can only be edited if it has not yet been completed.
     
-* Menu Option gr: This is an option for __admin__ only. 
+* Menu Option gr: This is an option for __admin__ only. This option generates a task overview and writes it to file ![task_overview.txt](/task_overview.txt) and
+      it also generates a total and per user overview of their task completion and writes it to file ![user_overview.txt](/user_overview.txt).
+      
 * Menu Option dr: This is an option for __admin__ only. This option displays the reports generated with Option gr.
+
 * Menu Option ds: This is an option for __admin__ only. This option displays the total tasks and total users.
+
 * Menu Option e: Search for books with below menu.
 
 ## Authors
