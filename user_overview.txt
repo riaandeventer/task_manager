@@ -1,0 +1,22 @@
+=============== USER OVERVIEW - PREPARED DATE : 2022-12-21 ==============
+
+The total number of users :			 3
+The total number of tasks :			 3
+
+----------------------- OVERVIEW for user admin -------------------------
+
+The assigned number of tasks :			 2
+The percentage of total number of tasks :	 66.67 %
+The percentage of tasks that are completed :	 0.00 %
+The percentage of tasks that are incomplete :	 100.00 %
+The percentage of incomplete tasks overdue :	 100.00 %
+
+----------------------- OVERVIEW for user riaand -------------------------
+
+The assigned number of tasks :			 1
+The percentage of total number of tasks :	 33.33 %
+The percentage of tasks that are completed :	 0.00 %
+The percentage of tasks that are incomplete :	 100.00 %
+The percentage of incomplete tasks overdue :	 0.00 %
+
+=========================================================================
